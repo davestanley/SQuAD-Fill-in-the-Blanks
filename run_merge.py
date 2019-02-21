@@ -19,7 +19,7 @@ from utils import merge_artfiles
 from utils_EDAplots import plotbar_train_dev,plothist_train_dev
 
 # Path for saving data
-foldername_save = '.'            # Save in current folder
+foldername_save = '.'            # By default, this will save to data/.
 
 # Load the original data
 arts_train = load_SQuAD_train()
