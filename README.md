@@ -20,6 +20,8 @@ I used the following approach to generate fill-in-the-blank questions from the S
 1. Identified all answers that are less than 2 words (after removal of stopwords)
 1. For each of the above answers, blanked out all of these answer words in the corresponding text
 
+![Algorithm Diagram](https://github.com/davestanley/SQuAD-Fill-in-the-Blanks/raw/master/algorithm_diagram.png)
+
 # Example
 
 For further details, see data_exploration.ipynb (https://github.com/davestanley/SQuAD-Fill-in-the-Blanks/blob/master/data_exploration.ipynb)
