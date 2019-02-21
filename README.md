@@ -16,10 +16,10 @@ As with the original SQuAD dataset, there are two json files, `data/train.json` 
 - `context_blanked` - A version of the original contex with key words blanked out
 - `blank_classification` - A contains 1 if word should be blanked, 0 if not
 
-# How it works
+# Algorithm
 
-I used the following approach to generate fill-in-the-blank questions from the SQuAD Q&A
-1. Removed stopwords from all answers
+Approach: Use SQuAD's Q&A pairs to identify candidate blank words in the original text. 
+1. Remove stopwords from all answers
 1. Identified all answers that are less than 2 words (after removal of stopwords)
 1. For each of the above answers, blanked out all of these answer words in the corresponding text
 
