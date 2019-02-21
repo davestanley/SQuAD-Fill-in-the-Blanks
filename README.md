@@ -1,9 +1,13 @@
 # SQuAD-Fill-in-the-Blanks
 
-Fill-in-the-blank questions derived from the Stanford Question and Answer Dataset (SQuAD): https://rajpurkar.github.io/SQuAD-explorer/
+This repo provides a corpus of fill-in-the-blank questions derived from the Stanford Question and Answer Dataset (SQuAD): https://rajpurkar.github.io/SQuAD-explorer/
 
+Some statistics:
+- Total number of articles = 477
+- Mean blanks per article = 256 for train.json; 309 per dev.json
+- Percentage of words that are blanked = 4.4% for train.json; 6.2% for dev.json
 
-For training fill-in-the-blank classifiers (for example, https://github.com/davestanley/mindpocket)
+Used for training fill-in-the-blank classifiers (for example, https://github.com/davestanley/mindpocket)
 
 # Getting started
 
