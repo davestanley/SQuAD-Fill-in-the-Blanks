@@ -15,6 +15,10 @@ As with the original SQuAD dataset, there are two json files, `data/train.json` 
 
 # How it works
 
+I used the following approach to generate fill-in-the-blank questions from the SQuAD Q&A
+1. Removed stopwords from all answers
+1. Identified all answers that are less than 2 words (after removal of stopwords)
+1. For each of the above answers, blanked out all of these answer words in the corresponding text
 
 # Example
 
