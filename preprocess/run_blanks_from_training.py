@@ -5,7 +5,7 @@ import os
 
 # Setup paths containing utility
 curr_folder = os.getcwd()
-sys.path.insert(0, os.path.join(curr_folder,'../modules'))
+sys.path.insert(0, os.path.join(curr_folder,'modules'))
 
 # Import utils
 from utils_EDA import p_list_qas
@@ -25,7 +25,6 @@ print ("Narticles in train = " +  str(len(arts_train)))
 print ("Narticles in dev = " +  str(len(arts_dev)))
 
 # # TRAINING DATASET # #
-
 # # Pick out a subset of articles
 art = arts_train[:]
 # art = arts_train[14:15]
@@ -53,7 +52,6 @@ save_data(art3,'train.json',foldername);
 
 
 # # DEV DATASET # #
-
 # # Pick out a subset of articles
 art = arts_dev[:]
 

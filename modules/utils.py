@@ -23,7 +23,8 @@ def get_data_root():
     import os
 
     # Set up path info
-    repodir = os.path.join(os.getenv("HOME"),'src','mindpocket')
+    #repodir = os.path.join(os.getenv("HOME"),'src','mindpocket')
+    repodir = os.getcwd()       # Need to run from main repo director
     datadir = os.path.join(repodir,'data')
 
     return datadir
