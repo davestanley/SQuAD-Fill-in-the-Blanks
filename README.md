@@ -42,6 +42,9 @@ To re-generate a new train.json and dev.json, run the following:
 - `python SQuAD2blanks.py`      # Generates json files containing just the blanks in data/SQuAD_pp_trainingblanks
 - `python mergeBlanks.py`       # Merges the classified blanks back into the full dataset
 
-For further details, see [data_exploration.ipynb](https://github.com/davestanley/SQuAD-Fill-in-the-Blanks/blob/master/data_exploration.ipynb)
+
+## Dependencies
+- Natural Language Toolkit (nltk) (for detecting stopwords)
+
 
 
