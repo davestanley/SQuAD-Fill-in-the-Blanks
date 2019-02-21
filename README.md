@@ -16,7 +16,6 @@ As with the original SQuAD dataset, there are two json files, `data/train.json` 
 - `context_blanked` - A version of the original contex with key words blanked out
 - `blank_classification` - A contains 1 if word should be blanked, 0 if not
 
-
 # How it works
 
 I used the following approach to generate fill-in-the-blank questions from the SQuAD Q&A
@@ -35,3 +34,14 @@ For further details, see [data_exploration.ipynb](https://github.com/davestanley
 
 - `arts[442]['paragraphs'][0]['blank_classification']` contains:
 >> [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+# Running the algorithm
+
+To re-generate a new train.json and dev.json, run the following:
+
+- `python SQuAD2blanks.py`      # Generates json files containing just the blanks in data/SQuAD_pp_trainingblanks
+- `python mergeBlanks.py`       # Merges the classified blanks back into the full dataset
+
+For further details, see [data_exploration.ipynb](https://github.com/davestanley/SQuAD-Fill-in-the-Blanks/blob/master/data_exploration.ipynb)
+
+
